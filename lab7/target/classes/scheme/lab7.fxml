@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.TextField?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab7.Controller">
+   <center>
+      <AnchorPane fx:id="center" prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="in">
+               <HBox.margin>
+                  <Insets left="15.0" top="35.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="save" mnemonicParsing="false" text="Save">
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="35.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="load" mnemonicParsing="false" text="Load">
+               <HBox.margin>
+                  <Insets right="15.0" top="35.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
