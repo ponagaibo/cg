@@ -43,7 +43,7 @@ public class Figure {
         return b;
     }
 
-    private double choose(int n, int i, double t) {
+    private double choose(int n, int i, double t) { // базисные функции
         long bi = combination(n, i);
         double res = Math.pow(t, i);
         double res2 = Math.pow(1 - t, n - i);
@@ -58,7 +58,7 @@ public class Figure {
         points.add(l);
     }
 
-    private TVector point(double t) {
+    private TVector point(double t) { // построение кривой по точкам
         double tx = 0;
         double ty = 0;
         double tz = 0;
@@ -66,7 +66,7 @@ public class Figure {
             double px = central.get(i).getX();
             double py = central.get(i).getY();
             double pz = central.get(i).getZ();
-            double coef = choose(3, i, t);
+            double coef = choose(2, i, t);
             tx += px * coef;
             ty += py * coef;
             tz += pz * coef;
